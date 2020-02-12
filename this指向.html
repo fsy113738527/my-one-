@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var weiArr = {
+      0:'误杀',
+      1:'哪吒',
+      2:'红海',
+      3:'肥仔',
+      length:4
+    }
+    console.log(weiArr);
+    // var arr = Array.prototype.slice.call(weiArr,0)
+    // for(var i = 0;i<weiArr.length;i++){
+    // arr.push(weiArr[i]);
+    // }
+    // arr.push.apply(arr,weiArr);
+    var arr = []
+    arr = arr.concat.apply(arr,weiArr)
+
+    console.log(arr[0]);
+   
+  </script>
+</body>
+</html>
